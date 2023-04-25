@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Media Query Break Points</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <style>
+    /* @media <type> <feature> {
+      
+    } */
+
+    /* 
+    @media screen (max-width: 900px;) {
+        //change something
+    } */
+
+    h1 {
+      font-size: 5em;
+    }
+
+    @media (max-width: 1000px) {
+      h1 {
+        color: red;
+        font-size: 8em;
+      }
+    }
+
+    /* @media (min-width: 1000px) {
+      h1 {
+        color: red;
+        font-size: 8em;
+      }
+    } */
+
+    /* @media (min-width: 900px) and (max-width: 1000px;) {
+      h1 {
+        color: red;
+        font-size:  8em;
+      }
+    } */
+  </style>
+</head>
+
+<body>
+
+  <h1>Hello World</h1>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>

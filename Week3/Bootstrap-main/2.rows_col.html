@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Row & Column</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <style>
+    div {
+      border: 1px solid black;
+    }
+  </style>
+</head>
+
+<body>
+  <h1>GRID ROW</h1>
+  <!-- Simple col -->
+  <br>
+  <div class="row">
+    <div class="col" style="background-color: red; color: white;">col</div>
+    <div class="col" style="background-color: brown; color: white;">col</div>
+  </div>
+
+  <br>
+  <!-- Same result -->
+  <div class="row">
+    <div class="col-6" style="background-color: green; color: white;">col-6</div>
+    <div class="col-6" style="background-color: black; color: white;">col-6</div>
+  </div>
+
+  <br>
+  <!-- 12 Column divded in each row -->
+  <div class="row">
+    <div class="col-6" style="background-color: yellowgreen; color: white;">col-6</div>
+    <div class="col-3" style="background-color: gold; color: white;">col-3</div>
+    <div class="col-2" style="background-color: teal; color: white;">col-2</div>
+    <div class="col-1" style="background-color: rebeccapurple; color: white;">col-1</div>
+  </div>
+
+  <!--! In above one problem jaab ap responsive mai check kerty hai too coloumn fixed rhaty hai -->
+
+  <!--* So like airbnb website se kai mai chata hu tablet pr 3 col dekhy and mobile pr 2 col so how posible?  -->
+
+  <!-- Col-medium-devices -->
+  <!-- col-md-  means responces
+  * means any devices for medium devices means laptop tablet pc and tv teh size is 6 unit 
+  ^ but the small devices or a mobile devices so thats a responces impact clearly shows
+  -->
+  <br>
+  <div class="row">
+    <div class="col-md-6" style="background-color: grey; color: white;">col-md-6</div>
+    <div class="col-md-6" style="background-color: orange; color: white;">col-md-6</div>
+  </div>
+
+  <br>
+  <!--& Now come back to the airbnb website its shows pc or a laptop 4 cards and tablet shows 3 cards when check mobile so show only 2 cards  -->
+  <!-- now lg means pc or a laptop devices 12/4 = 3  so 3-lg in each row -->
+  <div class="row">
+    <div class="col-lg-3" style="background-color: khaki; color: white;">col-lg-3</div>
+    <div class="col-lg-3" style="background-color: violet; color: white;">col-lg-3</div>
+    <div class="col-lg-3" style="background-color: palegreen; color: white;">col-lg-3</div>
+    <div class="col-lg-3" style="background-color: paleturquoise; color: white;">col-lg-3</div>
+  </div>
+
+  <br>
+  <!-- now md  means  tablet  devices 12/3  =  4-md  -->
+  <div class="row">
+    <div class="col-md-4" style="background-color: hotpink; color: white;">col-md-4</div>
+    <div class="col-md-4" style="background-color: royalblue; color: white;">col-md-4</div>
+    <div class="col-md-4" style="background-color: blueviolet; color: white;">col-md-4</div>
+  </div>
+
+<br>
+  <!-- now sm  means  small  devices 12/2  =  6-sm  -->
+  <div class="row">
+    <div class="col-sm-6" style="background-color: peru; color: white;">col-sm-6</div>
+    <div class="col-sm-6" style="background-color: aqua; color: white;">col-sm-6</div>
+  </div>
+
+  <br>
+  <!--All sizes in one dives  -->
+  <div class="row">
+    <div class="col-lg-3 col-md-4 col-sm-6" style="background-color: red; color: white;">col-lg-3 col-md-4 col-sm-6</div>
+    <div class="col-lg-3 col-md-4 col-sm-6" style="background-color: blue; color: white;">col-lg-3 col-md-4 col-sm-6</div>
+    <div class="col-lg-3 col-md-4 col-sm-6" style="background-color: darkgoldenrod; color: white;">col-lg-3 col-md-4 col-sm-6</div>
+    <div class="col-lg-3 col-md-12 col-sm-6" style="background-color: darkcyan; color: white;">col-lg-3 col-md-12 col-sm-6</div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>

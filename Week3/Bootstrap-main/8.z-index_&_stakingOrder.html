@@ -1,0 +1,83 @@
+<!--* Mujhy is imaage ko teraa ker kai thora sa nixhy lana hai or isy adhi image nicy wali cut kerwani hai -->
+<!--* Yha ye jo abhi example kerwaoga kai three divs mai  -->
+
+<!--* Z-index tabhi work mia aynga jaab hamry pas position hogi  other wise ya too nesting hoo  -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Z Index & Stacking Order</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+
+  <style>
+    div {
+      width: 100px;
+      height: 100px;
+      border: 1px solid #000;
+      position: absolute;
+    }
+
+    /* z-index: 1;  means first and other is end */
+    /* z-index: -1;  means end of other divs first */
+
+    .box1 {
+      background-color: red;
+      z-index: 1;
+    }
+
+    .box2 {
+      background-color: teal;
+      top: 20px;
+      left: 20px;
+    }
+
+    .box3 {
+      background-color: green;
+      top: 40px;
+      left: 40px;
+      z-index:  -1;
+    }
+  </style>
+</head>
+
+<body>
+  <!-- * jaab ap ki koi cheez nessting hoti hai jaab ap ko pata chlta hai is ka mostly -->
+  <!-- <div class="box1">
+    red
+
+    <div class="box2">
+      teal
+    </div>
+
+  </div>
+  <div class="box3">
+    green
+  </div> -->
+
+  <!--* yAA ap ne position di hoo -->
+  <div class="box1">
+    red
+  </div>
+  <!-- center sa utha kr nichy lai aon for checing staking  -->
+  <!-- <div class="box2">
+    teal
+  </div> -->
+  <!--* now you will change the staking order using CSS use Z-index -->
+  <div class="box2">
+    teal
+  </div>
+  <div class="box3">
+    green
+  </div>
+
+
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
